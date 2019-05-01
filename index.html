@@ -11,6 +11,93 @@
 </head>
 
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>The Code Review</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Signup for our Newsletter</h2>
+            <p>Get the lastest news on how your code is doing right in your inbox</p>
+            <form action="/">
+                <div class="section section-contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label class="input-label" for="name">First Name</label>
+                        <input class="form-control" type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="email">Email Address</label>
+                        <input class="form-control" type="text" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="phone">Phone Number</label>
+                        <input class="form-control" type="text" name="phone" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="address">Street Address</label>
+                        <input class="form-control" type="text" name="address" id="address">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="city">City</label>
+                        <input class="form-control" type="text" name="city" id="city">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="state">State</label>
+                        <input class="form-control" type="text" name="state" id="state">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="zip">Zip Code</label>
+                        <input class="form-control" type="text" name="zip" id="zip">
+                    </div>
+                </div>
+                <div class="section section-newsletter">
+                    <h3>Newsletter</h3>
+                    <fieldset>
+                        <legend>Select the newsletters you would like to recieve</legend>
+                        <div class="form-group">
+                            <input type="radio" name="newsletters" id="newsHTML">
+                            <label class="input-label" for="newsHTML">HTML News</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="newsletters" id="newsCSS">
+                            <label class="input-label" for="newsCSS">CSS News</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="newsletters" id="newsJS">
+                            <label class="input-label" for="newsJS">JS News</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Newsletter format</legend>
+                        <div class="form-group">
+                            <input type="checkbox" name="newsFormat" id="formatHTML">
+                            <label class="input-label" for="formatHTML">HTML</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="newsFormat" id="formatPlainText">
+                            <label class="input-label" for="formatPlainText">Plain Text</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label class="input-label" for="comments">Other topics you'd like to hear about</legend>
+                            <textarea class="form-control" name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="section section-submit">
+                    <button id="btnSubmit" type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="copyright">
+                Copyright The Code Review
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
