@@ -21,41 +21,46 @@
             <h2>Signup for our Newsletter</h2>
             <p>Get the lastest news on how your code is doing right in your inbox</p>
             <form action="/">
-                <div class="section section-contact-info">
-                    <h3>Contact Information</h3>
+                <fieldset class="section section-contact-info">
+                    <legend>Contact Information</legend>
                     <div class="form-group">
                         <label class="input-label" for="name">First Name</label>
-                        <input class="form-control" type="text" name="name" id="name">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Required" required>
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="email">Email Address</label>
-                        <input class="form-control" type="text" name="email" id="email">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Required" required>
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="phone">Phone Number</label>
-                        <input class="form-control" type="text" name="phone" id="phone">
+                        <input class="form-control" type="tel" name="phone" id="phone" placeholder="555-555-1234">
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="address">Street Address</label>
-                        <input class="form-control" type="text" name="address" id="address">
+                        <input class="form-control" type="text" name="address" id="address" placeholder="999 Example Street">
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="city">City</label>
-                        <input class="form-control" type="text" name="city" id="city">
+                        <input class="form-control" type="text" name="city" id="city" placeholder="Webdesignville">
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="state">State</label>
-                        <input class="form-control" type="text" name="state" id="state">
+                        <select class="form-control" name="state" id="state">
+                            <option value="" selected disabled>Choose State</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label class="input-label" for="zip">Zip Code</label>
-                        <input class="form-control" type="text" name="zip" id="zip">
+                        <input class="form-control" type="number" name="zip" id="zip" placeholder="09876">
                     </div>
-                </div>
-                <div class="section section-newsletter">
-                    <h3>Newsletter</h3>
-                    <fieldset>
-                        <legend>Select the newsletters you would like to recieve</legend>
+                </fieldset>
+                <fieldset class="section section-newsletter">
+                    <legend>Newsletter</legend>
+                        <p>Select the newsletters you would like to recieve</p>
                         <div class="form-group">
                             <input type="radio" name="newsletters" id="newsHTML">
                             <label class="input-label" for="newsHTML">HTML News</label>
@@ -68,9 +73,7 @@
                             <input type="radio" name="newsletters" id="newsJS">
                             <label class="input-label" for="newsJS">JS News</label>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Newsletter format</legend>
+                        <p>Newsletter format</p>
                         <div class="form-group">
                             <input type="checkbox" name="newsFormat" id="formatHTML">
                             <label class="input-label" for="formatHTML">HTML</label>
@@ -79,12 +82,11 @@
                             <input type="checkbox" name="newsFormat" id="formatPlainText">
                             <label class="input-label" for="formatPlainText">Plain Text</label>
                         </div>
-                    </fieldset>
                     <div class="form-group">
-                        <label class="input-label" for="comments">Other topics you'd like to hear about</legend>
-                            <textarea class="form-control" name="comments" id="comments" cols="30" rows="10"></textarea>
+                        <label class="input-label" for="comments">Other topics you'd like to hear about</label>
+                            <textarea class="form-control" name="comments" id="comments" cols="30" rows="10" placeholder="Graphic Design, MySQL, etc."></textarea>
                     </div>
-                </div>
+                </fieldset>
                 <div class="section section-submit">
                     <button id="btnSubmit" type="submit">Sign Up</button>
                 </div>
